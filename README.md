@@ -1,5 +1,18 @@
-<h1>Título: Scraper de títulos de Humble Bundle</h1>
-<p>Este es un programa en Go que permite obtener de manera rápida y sencilla los títulos de los paquetes de libros de Humble Bundle.</p>
-<h2>Uso</h2><p>El programa se ejecuta mediante la línea de comandos y requiere una única bandera <code>-u</code> que debe contener la URL del paquete de libros de Humble Bundle del que se desean obtener los títulos.
-</p><p>Ejemplo:</p><pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">go</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-go"><span class="hljs-keyword">go</span> run scraper.<span class="hljs-keyword">go</span> -u https:<span class="hljs-comment">//www.humblebundle.com/books/linux-geek-books</span>
-</code></div></div></pre><p>El programa devolverá una lista numerada con los títulos de los libros incluidos en el paquete.</p><h2>Motivación</h2><p>El objetivo principal de este programa es aprender sobre el lenguaje de programación Go y mejorar habilidades de programación en general. Además, el programa también tiene una aplicación práctica al permitir obtener los títulos de los paquetes de libros de Humble Bundle de manera rápida y sencilla.</p>
+# HumbleScrapper
+
+Este es un programa en Go que permite obtener los títulos de los paquetes de libros de Humble Bundle.
+
+## Uso
+
+El programa se ejecuta mediante la línea de comandos y requiere una única bandera `-u` que debe contener la URL del paquete de libros de Humble Bundle del que se desean obtener los títulos.
+
+Ejemplo:
+```go
+go run scraper.go -u https://www.humblebundle.com/books/pack-que-quieres
+```
+
+El programa devolverá una lista numerada con los títulos de los libros incluidos en el paquete.
+
+## Motivación
+
+El objetivo principal de este programa es aprender sobre el lenguaje de programación Go y mejorar habilidades de programación en general.
