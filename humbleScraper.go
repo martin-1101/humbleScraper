@@ -41,7 +41,10 @@ func main() {
 	// URL de la página web que queremos extraer el HTML
 	url := "https://www.humblebundle.com/books/cybersecurity-packt-2023-books"
 	titles := GetTitles(url)
-	//fmt.Println(titles)
-	fmt.Print(titles[3])
+
+	for index, value := range titles {
+		fmt.Println(index+1, value)
+
+	}
 
 }
